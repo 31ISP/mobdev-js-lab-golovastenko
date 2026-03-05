@@ -1,8 +1,8 @@
-let temperature = 36.6789
+const temperature = 36.6789
 console.log(temperature.toFixed(1))
 
-let a = 17
-let b = 5
+const a = 17
+const b = 5
 console.log(Math.floor(a/b), `Остаток от деления ${a%b}`)
 
 function getRandomInt(min, max) {
