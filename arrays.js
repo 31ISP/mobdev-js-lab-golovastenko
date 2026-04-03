@@ -30,13 +30,10 @@ function prices(item) {
 function names(item) {
     return item.name
 }
-function summary(item) {
-    console.log(Number(item.price))
-    return Number(item.price)
-}
+const total = products.reduce((sum, item) => sum + item.price, 0)
 console.log(products.filter(prices))
 console.log(products.map(names))
-console.log(products.reduce(summary))
+console.log(total)
 
 
 const soup = [12, 45, 7, 33, 18]
